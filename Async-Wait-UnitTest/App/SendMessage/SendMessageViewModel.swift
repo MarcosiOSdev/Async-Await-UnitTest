@@ -7,6 +7,13 @@
 
 import Combine
 
+extension SendMessageViewModel {
+    struct Constants {
+        static let textSending = "Sending..."
+        static let textWasSend = "Send"
+    }
+}
+
 @MainActor class SendMessageViewModel: ObservableObject {
     
     @Published
@@ -15,7 +22,7 @@ import Combine
     @Published
     private(set) var errorText: String?
     
-    var buttonTitle: String { isSending ? "Sending..." : "Send"}
+    var buttonTitle: String { isSending ? Constants.textSending : Constants.textWasSend }
     var isSendingDisabled: Bool { isSending  || message.isEmpty }
     
     private let sender: MessageSender

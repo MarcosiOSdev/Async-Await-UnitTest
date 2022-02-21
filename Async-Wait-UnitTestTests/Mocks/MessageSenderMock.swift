@@ -11,7 +11,9 @@ import Combine
 class MessageSenderMock: MessageSender {
     @Published private(set) var pendingMessageCount = 0
     private var pendingMessageContinuations = [CheckedContinuation<Void, Error>]()
-
+    
+    var withError: MessageSenderError?
+    
     func sendMessage(_ message: String) async throws {
         return try await withCheckedThrowingContinuation { continuation in
             pendingMessageContinuations.append(continuation)
@@ -23,7 +25,9 @@ class MessageSenderMock: MessageSender {
         let continuations = pendingMessageContinuations
         pendingMessageContinuations = []
         pendingMessageCount = 0
-        continuations.forEach { $0.resume() }
+        continuations.forEach {
+            withError == nil ? $0.resume() : $0.resume(throwing: withError!)
+        }
     }
 
     func triggerError(_ error: Error) {

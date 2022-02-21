@@ -126,9 +126,9 @@
 		1D02D97827C316010056B91B /* Async-Wait-UnitTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				1D02D97927C316010056B91B /* SendMessageViewModelTests.swift */,
-				1D02D9A127C322E50056B91B /* MessageSenderMock.swift */,
-				1D02D9A327C323440056B91B /* XCTestCase+Extensions.swift */,
+				1D8C7B9827C3E48600FCA1BA /* Tests */,
+				1D8C7B9727C3E48100FCA1BA /* Mocks */,
+				1D8C7B9627C3E47100FCA1BA /* Extensions */,
 			);
 			path = "Async-Wait-UnitTestTests";
 			sourceTree = "<group>";
@@ -186,6 +186,30 @@
 				1D02D99D27C31FAE0056B91B /* MessageSenderService.swift */,
 			);
 			path = MessageSender;
+			sourceTree = "<group>";
+		};
+		1D8C7B9627C3E47100FCA1BA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1D02D9A327C323440056B91B /* XCTestCase+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1D8C7B9727C3E48100FCA1BA /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				1D02D9A127C322E50056B91B /* MessageSenderMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		1D8C7B9827C3E48600FCA1BA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1D02D97927C316010056B91B /* SendMessageViewModelTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
