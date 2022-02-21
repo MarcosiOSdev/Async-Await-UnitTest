@@ -11,7 +11,7 @@ import SwiftUI
 struct Async_Wait_UnitTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainBuilder.shared.makeSendMessageView()
         }
     }
 }
