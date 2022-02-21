@@ -19,7 +19,7 @@ class MessageSenderServiceTests: XCTestCase {
     }
 
     func testSuccessfullyWithMessage() async throws {
-        let result = try? await sut.sendMessage("success")
+        let result: ()? = try? await sut.sendMessage("success")
         XCTAssertNotNil(result)
     }
     

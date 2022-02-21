@@ -13,7 +13,6 @@
 		1D02D97027C316010056B91B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D02D96F27C316010056B91B /* Preview Assets.xcassets */; };
 		1D02D97A27C316010056B91B /* SendMessageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D97927C316010056B91B /* SendMessageViewModelTests.swift */; };
 		1D02D98427C316010056B91B /* Async_Wait_UnitTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D98327C316010056B91B /* Async_Wait_UnitTestUITests.swift */; };
-		1D02D98627C316010056B91B /* Async_Wait_UnitTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D98527C316010056B91B /* Async_Wait_UnitTestUITestsLaunchTests.swift */; };
 		1D02D99327C316660056B91B /* SendMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D99227C316660056B91B /* SendMessageViewModel.swift */; };
 		1D02D99727C31F0B0056B91B /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D99627C31F0B0056B91B /* MainBuilder.swift */; };
 		1D02D99A27C31F470056B91B /* MessageSenderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D99927C31F470056B91B /* MessageSenderError.swift */; };
@@ -52,7 +51,6 @@
 		1D02D97927C316010056B91B /* SendMessageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageViewModelTests.swift; sourceTree = "<group>"; };
 		1D02D97F27C316010056B91B /* Async-Wait-UnitTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Async-Wait-UnitTestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D02D98327C316010056B91B /* Async_Wait_UnitTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async_Wait_UnitTestUITests.swift; sourceTree = "<group>"; };
-		1D02D98527C316010056B91B /* Async_Wait_UnitTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async_Wait_UnitTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1D02D99227C316660056B91B /* SendMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageViewModel.swift; sourceTree = "<group>"; };
 		1D02D99627C31F0B0056B91B /* MainBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
 		1D02D99927C31F470056B91B /* MessageSenderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSenderError.swift; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				1D02D98327C316010056B91B /* Async_Wait_UnitTestUITests.swift */,
-				1D02D98527C316010056B91B /* Async_Wait_UnitTestUITestsLaunchTests.swift */,
 			);
 			path = "Async-Wait-UnitTestUITests";
 			sourceTree = "<group>";
@@ -374,7 +371,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D02D98627C316010056B91B /* Async_Wait_UnitTestUITestsLaunchTests.swift in Sources */,
 				1D02D98427C316010056B91B /* Async_Wait_UnitTestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
