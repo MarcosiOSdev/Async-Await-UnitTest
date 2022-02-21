@@ -9,9 +9,11 @@ import Combine
 
 class MessageSenderService: MessageSender {
     
+    var timeForProccessingMessage: UInt32 = 3
+    
     private func getMessage(completion: @escaping ()-> Void) {
         DispatchQueue(label: "waiting-sample").async {
-            sleep(3)
+            sleep(self.timeForProccessingMessage)
             completion()
         }
     }
