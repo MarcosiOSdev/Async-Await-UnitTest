@@ -11,7 +11,7 @@
 		1D02D96B27C315FF0056B91B /* SendMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D96A27C315FF0056B91B /* SendMessageView.swift */; };
 		1D02D96D27C316010056B91B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D02D96C27C316010056B91B /* Assets.xcassets */; };
 		1D02D97027C316010056B91B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D02D96F27C316010056B91B /* Preview Assets.xcassets */; };
-		1D02D97A27C316010056B91B /* Async_Wait_UnitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D97927C316010056B91B /* Async_Wait_UnitTestTests.swift */; };
+		1D02D97A27C316010056B91B /* SendMessageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D97927C316010056B91B /* SendMessageViewModelTests.swift */; };
 		1D02D98427C316010056B91B /* Async_Wait_UnitTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D98327C316010056B91B /* Async_Wait_UnitTestUITests.swift */; };
 		1D02D98627C316010056B91B /* Async_Wait_UnitTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D98527C316010056B91B /* Async_Wait_UnitTestUITestsLaunchTests.swift */; };
 		1D02D99327C316660056B91B /* SendMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D99227C316660056B91B /* SendMessageViewModel.swift */; };
@@ -19,6 +19,8 @@
 		1D02D99A27C31F470056B91B /* MessageSenderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D99927C31F470056B91B /* MessageSenderError.swift */; };
 		1D02D99C27C31F630056B91B /* MessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D99B27C31F630056B91B /* MessageSender.swift */; };
 		1D02D99E27C31FAE0056B91B /* MessageSenderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D99D27C31FAE0056B91B /* MessageSenderService.swift */; };
+		1D02D9A227C322E50056B91B /* MessageSenderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D9A127C322E50056B91B /* MessageSenderMock.swift */; };
+		1D02D9A427C323440056B91B /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02D9A327C323440056B91B /* XCTestCase+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +47,7 @@
 		1D02D96C27C316010056B91B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D02D96F27C316010056B91B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D02D97527C316010056B91B /* Async-Wait-UnitTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Async-Wait-UnitTestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D02D97927C316010056B91B /* Async_Wait_UnitTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async_Wait_UnitTestTests.swift; sourceTree = "<group>"; };
+		1D02D97927C316010056B91B /* SendMessageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageViewModelTests.swift; sourceTree = "<group>"; };
 		1D02D97F27C316010056B91B /* Async-Wait-UnitTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Async-Wait-UnitTestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D02D98327C316010056B91B /* Async_Wait_UnitTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async_Wait_UnitTestUITests.swift; sourceTree = "<group>"; };
 		1D02D98527C316010056B91B /* Async_Wait_UnitTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async_Wait_UnitTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		1D02D99927C31F470056B91B /* MessageSenderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSenderError.swift; sourceTree = "<group>"; };
 		1D02D99B27C31F630056B91B /* MessageSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSender.swift; sourceTree = "<group>"; };
 		1D02D99D27C31FAE0056B91B /* MessageSenderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSenderService.swift; sourceTree = "<group>"; };
+		1D02D9A127C322E50056B91B /* MessageSenderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSenderMock.swift; sourceTree = "<group>"; };
+		1D02D9A327C323440056B91B /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +126,9 @@
 		1D02D97827C316010056B91B /* Async-Wait-UnitTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				1D02D97927C316010056B91B /* Async_Wait_UnitTestTests.swift */,
+				1D02D97927C316010056B91B /* SendMessageViewModelTests.swift */,
+				1D02D9A127C322E50056B91B /* MessageSenderMock.swift */,
+				1D02D9A327C323440056B91B /* XCTestCase+Extensions.swift */,
 			);
 			path = "Async-Wait-UnitTestTests";
 			sourceTree = "<group>";
@@ -326,7 +332,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D02D97A27C316010056B91B /* Async_Wait_UnitTestTests.swift in Sources */,
+				1D02D9A227C322E50056B91B /* MessageSenderMock.swift in Sources */,
+				1D02D9A427C323440056B91B /* XCTestCase+Extensions.swift in Sources */,
+				1D02D97A27C316010056B91B /* SendMessageViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
