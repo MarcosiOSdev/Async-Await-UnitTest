@@ -9,4 +9,4 @@ YEAH !!
 
 You can Fork , copy and study ;)
 
-Sample project with project of SwiftBySundell just apply unit test with Combine and Await =D 
+Sample project with SwiftBySundell's project. I just apply unit test and ui test with Combine and Await =D .
